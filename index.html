@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Розіграш!</title>
+</head>
+<body>
+    <h1>Ласкаво просимо!</h1>
+    <script>
+        window.onload = () => {
+            const audio = new Audio('sound.mp3');
+            audio.loop = true; // Зациклюємо звук
+            audio.play().catch(error => console.log("Автовідтворення заблоковано:", error));
+        };
+    </script>
+</body>
+</html>
